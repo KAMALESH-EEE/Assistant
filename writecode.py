@@ -77,6 +77,6 @@ fil.close()
 print ("**********************************")
 print ("*  RUNNING YOUR CODE  *")
 print ("**********************************")
-print('\n')
+print(' ')
 
 import mycode
