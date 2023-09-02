@@ -69,7 +69,7 @@ def get_code():
 #name = input("code name:")
 #name+='.py'
 get_code()
-fil = open ('Assistant/mycode.py','w')
+fil = open ('mycode.py','w')
 fil.writelines(cod)
 
 fil.close()
