@@ -18,13 +18,16 @@ while True:
         elif 'task' in a or 'code' in a:
             print("Task ennanu sollu da......")
             import writecode
+            writecode.w_code()
 
         elif 'file' in a:
             print("Irru paakuren.......")
             import myfiles
+            myfiles.get_file()
         
         elif 'web' in a:
             import myweb
+            myweb.web()
     except:
         print('Can\'t Access')
 

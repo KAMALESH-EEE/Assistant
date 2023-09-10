@@ -8,4 +8,3 @@ def get_file():
             print (i)
     except:
         print('File illa !')
-get_file()

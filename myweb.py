@@ -19,12 +19,12 @@ def find_data():
     url=input("Enter URL to open: ") 
     webbrowser.open_new_tab(url)
 
+def web():  
+    a=input('Search or Link ')
 
-a=input('Search or Link ')
-
-if a == 's':
-    get_data()
+    if a == 's':
+        get_data()
 
 
-elif a== 'link':
-    find_data()
+    elif a== 'link':
+        find_data()
