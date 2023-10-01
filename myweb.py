@@ -1,7 +1,9 @@
-def get_data():
-    from googlesearch import search  
-    query =input("L-inputs:") 
-    
+from googlesearch import search  
+import TextVoice
+
+def get_data(query):
+   
+
     my_results_list = []  
     for i in search(query,lang = 'en',num_results=10,advanced=True,):  
         my_results_list.append(i)  
@@ -9,22 +11,13 @@ def get_data():
     while '=' in d:
         d=d[d.index('=')+1::]
     print(d+'\nLINKS:\n')
+    TextVoice.speech(d+'\nLINKS:\n')
     my_results_list=search(query,lang = 'en',num_results=10,)
     for i in my_results_list:
         print(i)
 
 
-def find_data():
+def find_url():
     import webbrowser
     url=input("Enter URL to open: ") 
     webbrowser.open_new_tab(url)
-
-def web():  
-    a=input('Search or Link ')
-
-    if a == 's':
-        get_data()
-
-
-    elif a== 'link':
-        find_data()

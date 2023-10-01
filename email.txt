@@ -1,0 +1,8 @@
+From:
+	R KAMALESH
+To:
+	Vimlesh
+Respected: Sir/Madam
+	Sub:sting python script for mail writing-reg.
+	I am testing python script. for mail writing and its works fine. so I want to complete this mail. 
+			 Thank You.

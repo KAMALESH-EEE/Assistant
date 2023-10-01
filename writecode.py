@@ -1,3 +1,5 @@
+cod=[]
+indentation = ''
 
 def code_line(com):
     global indentation, cod
@@ -15,12 +17,12 @@ def code_line(com):
         for word in words:
             if word == 'of':
                 str += '('
-            elif word == 'get':
-                str += 'input()'
             elif word == '_':
                 str += ' '
             elif word == 'fo':
                 str +=')'
+            elif 'get' == word:
+                str += 'input()'
             elif word == 'let':
                 pass
             elif word == 'is':
@@ -54,7 +56,7 @@ def get_code():
     elif command == 'getin':
         indentation+='\t'
     elif command == 'getout':
-        indentation=indentation[3::]
+        indentation = indentation[0:len(indentation)-4]
     elif command == 'del_line':
         cod.pop()
     elif command == 'kaatu':
@@ -65,23 +67,17 @@ def get_code():
     
     get_code()
 
-def w_code():
-    global cod
-    global indentation
-    
-    #name = input("code name:")
-    #name+='.py'
-    get_code()
-    fil = open ('mycode.py','w')
-    fil.writelines(cod)
+#name = input("code name:")
+#name+='.py'
+get_code()
+fil = open ('Assistant\mycode.py','w')
+fil.writelines(cod)
 
-    fil.close()
+fil.close()
 
-    print ("**********************************")
-    print ("*  RUNNING YOUR CODE  *")
-    print ("**********************************")
-    print(' ')
+print ("**********************************")
+print ("*  RUNNING YOUR CODE  *")
+print ("**********************************")
+print(' ')
 
-    import mycode
-cod =[]
-indentation =''
+import mycode
