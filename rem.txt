@@ -1,9 +1,2 @@
-ple,drive,examination,energy storage and fuel cells,trust,movies,You  have examination,machine learning data set annotation files,
-ple_on 2023-09-20 at 00:00_
-drive_on 2023-10-04 at 09:00_
-examination_on 2023-10-03 at 12:00_
-energy storage and fuel cells_on 2023-10-05 at 06:00_
-trust_on 2023-10-03_
-movies_on 2023-10-01_
-You  have examination_on 2023-10-04 at 00:00_
-machine learning data set annotation files_on 2023-10-03 at 06:00_
+Apple,
+Apple_on 2023-09-20 at 00:00_
